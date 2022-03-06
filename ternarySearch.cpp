@@ -11,7 +11,6 @@ int ternarySearch(int l, int r) {
     while(l <= r) {
         int m1 = l + (r-l)/3;
         int m2 = r - (r-l)/3;
-        cout << l << " " << m1 << " " << m2 << " " << r << endl;
         if(a[m1] == x) return m1;
         else if(a[m2] == x) return m2;
         if(x < a[m1]) r = m1 -1;
@@ -20,7 +19,6 @@ int ternarySearch(int l, int r) {
             l = m1 + 1;
             r = m2 - 1;
         }
-        cout << l << " " << m1 << " " << m2 << " " << r << endl;
     }
     return -1;
 }
