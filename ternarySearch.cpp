@@ -28,7 +28,6 @@ int ternarySearch(int l, int r) {
 int main() {
     cin >> n >> x;
     for(int i = 0; i < n; i++) cin >> a[i];
-    sort(a, a+n);
     cout << ternarySearch(0, n-1);
     return 0;
 }
