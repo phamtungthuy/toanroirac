@@ -3,7 +3,7 @@ procedure binaryInsertionSort (a[1], a[2], ..., a[n])
 for i:=2 to n
 	j := i - 1
 	k := 1
-	selected := a
+	selected := a[i]
 	while k < j
 		m := (j + k) / 2
 		if selected > a[m] then k := m + 1
